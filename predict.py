@@ -8,7 +8,7 @@ from sqlalchemy import text
 
 # Neon connection string: paste it here, or set DATABASE_URL in Streamlit secrets
 try:
-    DATABASE_URL = st.secrets["DATABASE_URL"]
+    DATABASE_URL = "postgresql+psycopg2://neondb_owner:npg_C6EfWpN0VXZL@ep-floral-boat-b4jm5w6f-pooler.c-6.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 except Exception:
     DATABASE_URL = "postgresql+psycopg2://USER:PASSWORD@HOST/neondb?sslmode=require"
 
